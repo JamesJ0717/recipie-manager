@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  recipies:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - HOST=recipies.jamesjohnnson.io
+      - PORT=80
+    ports:
+      - 80:80

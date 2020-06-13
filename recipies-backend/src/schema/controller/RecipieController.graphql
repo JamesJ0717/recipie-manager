@@ -1,0 +1,10 @@
+type Query {
+  recipies: [Recipie]
+  recipiesGet(id: Int): Recipie
+}
+
+type Mutation {
+  recipiesSave(date: Date, name: String, recipie: String): Recipie
+  recipiesUpdate(id: Int, date: Date, name: String, recipie: String): Recipie
+  recipiesDelete(id: Int): Boolean
+}

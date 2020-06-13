@@ -1,0 +1,6 @@
+type Recipie {
+  id: Int
+  date: Date
+  name: String
+  recipie: String
+}

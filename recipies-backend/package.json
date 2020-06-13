@@ -1,0 +1,19 @@
+{
+  "name": "recipies-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.0.29",
+    "ts-node": "^3.3.0",
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "server": "nodemon --watch src src",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "sqlite3": "^4.0.3",
+    "vesper": "^0.1.9"
+  }
+}
