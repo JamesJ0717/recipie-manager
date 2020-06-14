@@ -34,7 +34,9 @@
     "react-scripts": "3.4.1",
     "reactstrap": "^8.4.1",
     "sqlite3": "^4.0.3",
-    "ts-node": "^8.10.2",
+    "@types/node": "^8.0.29",
+    "ts-node": "^3.3.0",
+    "typescript": "^3.3.3333",
     "vesper": "^0.1.9"
   }
 }
