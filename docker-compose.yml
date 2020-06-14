@@ -7,5 +7,13 @@ services:
     environment:
       - HOST=recipies.jamesjohnnson.io
       - PORT=80
-    ports:
-      - 80:80
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.recipies-https.rule=Host(`recipies.jamesjohnson.io`)"
+      - "traefik.http.routers.recipies-https.entrypoints=websecure"
+      - "traefik.http.routers.recipies-https.tls.certresolver=myhttpchallenge"
+networks:
+  web:
+    external: true

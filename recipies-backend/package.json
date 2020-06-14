@@ -12,7 +12,7 @@
     "server": "nodemon --watch src src",
     "start": "ts-node src/index.ts"
   },
-  "dependencies": {
+  "dependenciess": {
     "sqlite3": "^4.0.3",
     "vesper": "^0.1.9"
   }
